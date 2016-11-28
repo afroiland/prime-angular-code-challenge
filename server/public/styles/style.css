@@ -1,4 +1,13 @@
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .heroInfo {
   border: 1px solid black;
   margin: 3px;
+}
+
+.deleteButton {
+  font-size: 16px;
 }
