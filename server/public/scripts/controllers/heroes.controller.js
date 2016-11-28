@@ -7,15 +7,12 @@ app.controller("HeroesController", ["$http", function($http) {
   getHeroes();
 
   function getHeroes() {
-    console.log('getting heroes');
+    // console.log('getting heroes');
     $http.get('/heroes')
       .then(function(response) {
         self.heroArray = response.data;
-        console.log('self.heroArray: ', self.heroArray);
+        // console.log('self.heroArray: ', self.heroArray);
       });
   }
-
-
-
 
 }]);

@@ -1,1 +1,16 @@
 <h2>Hero Entry</h2>
+
+<div id="entryForm">
+    <form id="heroForm" ng-submit="hec.addHero()">
+      <label for="persona">Persona: </label>
+      <input type="text" id="heroPersona" name="persona" ng-model="hec.newHero.persona"/>
+
+      <label for="alias">Alias: </label>
+      <input type="text" id="heroAlias" name="alias" ng-model="hec.newHero.alias"/>
+
+      <label for="power_id">Power ID: </label>
+      <input type="text" id="heroPower_id" name="power_id" ng-model="hec.newHero.power_id"/>
+
+      <input type="submit" value="Submit Hero" />
+    </form>
+  </div>
