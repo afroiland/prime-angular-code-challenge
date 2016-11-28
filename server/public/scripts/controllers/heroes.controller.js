@@ -15,4 +15,13 @@ app.controller("HeroesController", ["$http", function($http) {
       });
   }
 
+  self.deleteHero = function(hero) {
+    console.log(hero);
+    $http.delete('/heroes/' + hero.id)
+      .then(function(response) {
+        console.log('deleted hero: ', hero);
+        getHeroes();
+      });
+  }
+
 }]);
